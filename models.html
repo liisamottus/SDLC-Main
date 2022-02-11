@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SDLC Models</title>
+</head>
+<body>
+            <h2>Accordion</h2>
+
+        <button class="accordion">Waterfall</button>
+        <div class="panel">
+        <p>Jugamudeli esimese proovi tutvustas Winston w Royce 1970. aastal oma artiklis. Pärast seda on jugamudelis öeldud, et üks peaks teise faasi minema ainult siis, kui eelmisi faase on täielikult testitud,
+             üle vaadatud ja kinnitatud. See rõhutab etappide loogilist progresseerumist.Jugamudelis jaguneb kogu tarkvaraarenduse protsess etappideks, kus ühe faasi väljund toimib järgmise faasi sisendina. Järgmine etapp algab alles siis, kui eelmine etapp on lõpule jõudnud.</p>
+             <img src="images/waterfall.jpg" alt="" width="500px">
+             <li>See võimaldab osakondade jaotamist ja kontrolli</li>
+             <li>Igale arenguetapile saab seada ajakava ja toode võib ükshaaval läbi viia arendusprotsessi mudeli faase </li>
+             <li>Selgelt määratletud etapid</li>
+             <li>Protsess ja tulemused on hästi dokumenteeritud</li>
+
+        <p>Kaitseprojektis kasutatakse peamiselt jugamudelit, kuna seal on nõue selge, sest enne arendusetappi siirdumist analüüsivad nad seda hästi. Seda saab kasutada ka migratsiooniprojektides, kus nõuded on samad, ainult platvorm või keeled võivad erineda/muutuda.</p>
+        </div>
+
+        <button class="accordion">Iterative</button>
+        <div class="panel">
+        <p>1950.ndatel.
+            See mudel algab väiksemate nõudmistega ja SDLC protsessi käivitamiseks ei vaja see toote spetsifikatsiooni täielikku konteksti. See protsess on korduv ja iga SDLC protsessi kordamise korral tehakse
+             tarkvara uuem versioon. Iga iteratsioon võib kesta 2–6 nädalat. Iga iteratsioon arendab selles lähenemises eraldi komponenti. See mudel nõuab ka režiimiressurssi kui jugamudel. Millal kasutada?</p>
+             <img src="images/iterative.png" alt=""width="500px">
+             <p>Iteartiivne mudel sobib kui: </p>
+             <li>On olemas üldine pilt, mida tahetakse saavutada. Väiksemaid ülesandeid saab täpsustada hiljem.</li>
+             <li>Projekt on suur. Kui on oht, et projekt venib pikaks, tasub võtta kasutusele iteratiivne mudel, kuna see lubab rakendada paralleelseid iteratsioone: minimeerib riski, et projekti lõpuks muutuvad tarkvara vajadused/nõudmised.</li>
+
+             
+        </div>
+
+        <button class="accordion">Prototyping</button>
+        <div class="panel">
+        <p>Mittetäieliku tarkvaraprogrammi ja selle versioonide väljatöötamiseks kasutatakse prototüüpimudelit. See on tarkvara arendamise meetod. Seda kasutatakse lõpptoote varasema versiooni loomiseks ja testimiseks.
+             See on iteratiivne protsess ja see mudel töötab peamiselt olukordades, kus nõuded on olemas aegsasti.
+
+            Prototüübi mudelis tuleks nõue võimalikult detailselt määratleda. Kujundus on välja töötatud uue süsteemi jaoks ja sellest disainist luuakse esimene prototüüp. Prototüübi mudelis koostatakse tööprogrammid kiiresti.</p>
+            
+            <img src="images/prototype-model.png.png" alt=""width="500px">
+            
+            <p>Seda tuleks kasutada siis, kui lõppkasutajalt nõutakse palju suhtlemist lõppsüsteemidega, nagu veebisüsteemid, veebirakendused või liidesed. Nendega on liiklejaid kõige rohkem, alates pidevast kontrollimisest ja 
+                kasutamisest. Süsteemi arendamiseks on vaja koolitatud inimesi. See eeldab ka kliendi pidevat kättesaadavust erinevate sisseehitatud prototüüpide sisendite, tagasiside ja märkide eemaldamiseks.
+            Eelised: </p>
+            <li>Annab selge pildi tarvarast, mida arendatakse</li>
+            <li>Aitab kokku hoida tekkivate probleemide hilisema osa</li>
+            <li>Aitab kliendi ja arendaja suhtlusel muuta toodet vastavalt nõudele</li>
+            <li>Aitab hõlpsamini mõista ka arendajatele kliendi seisukohta</li>
+
+        </div>
+
+        <button class="accordion">Spiral</button>
+        <div class="panel">
+        <p>See mudel on kombinatsioon juga- ja spiraalmudelist ning töötab korduvalt. Projektiga seotud riskide põhjal juhendab see mudel meeskonda ühe või mitme SDLC mudeli, näiteks juga või Iteratiivse mudeli 
+            elementide vastuvõtmisel. Siin jagatakse tarkvara elutsükkel väiksemateks osadeks ja tarkvarale saab lisada uusi funktsioone isegi SDLC hilises staadiumis.</p>
+
+            <img src="images/spiral.png" alt=""width="500px">
+        </div>
+
+        <button class="accordion">V-Shape</button>
+        <div class="panel">
+        <p>V-mudel on põhimõtteliselt laiendus jugamudelile, kus katsetamine ja arendusetapid on kavandatud paralleelselt. Üks pool koosneb verifitseerimisetapist, teine ​​aga valideerimisetapist, mis ühendatakse 
+            lõpuks kodeerimisega. Järgmine olek algab alles siis, kui eelmine olek on lõpule viidud.</p>
+
+            <img src="images/v-shape.jpg" alt=""width="500px">
+        </div>
+
+        <button class="accordion">Agile</button>
+        <div class="panel">
+        <p>Agiilne mudeliprotsess SDLC-s hõlbustab arendajaid meeskonnaga suhtlemisel ja annab kliendile käimasoleva projekti kohta täieliku idee ning teeb vajadusel muudatusi. See paneb arendajad muudatusi tegema
+             vastavalt kliendi interaktsioonile ja säästab ümbertöötamisel palju aega. Kuna see lähenemine töötab arendamisel ja testimisel käsikäes, töötavad arendajad ja testijad koos.</p>
+
+             <img src="images/agile-model.png.png" alt=""width="500px">
+
+             <li>Meeskond on väga tugev
+             </li>
+             <li>On soov projektiga kiiresti alustada</li>
+             <li>On tõenäosus, et mõned nõuded ilmnevad hiljem</li>
+             <li>Rahastus ei ole probleemiks</li>
+             
+        </div>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+        </script>
+</body>
+</html>
