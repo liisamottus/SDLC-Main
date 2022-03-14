@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SDLC Developments</title>
+</head>
+<body>
+            <h2>Accordion</h2>
+        <button class ="accordion">Behavior-driven development</button>
+        <div class="panel">
+        <p>In software engineering, BDD is an agile software development process that encourages collaboration among developers, quality 
+            assurance testers, and customer representatives in a software project. It encourages teams to use conversation and concrete
+            examples to formalize a shared understanding of how the application should behave.
+            Although BDD is principally an idea about how software development should be managed by both business 
+            interests and technical insight, the practice of BDD does assume the use of specialized software tools to support the 
+            development process.
+            Although these tools are often developed specifically for use in BDD projects, they can be seen as specialized forms of the
+            tooling that 
+            supports test-driven developmnet. The tools serve to add automation to the ubiquitous language that is a central theme 
+            of BDD.
+        </p>
+    </div>
+    <button class="accordion">Design-driven development</button>
+    <div class="panel">
+        <p>Design-driven development is an agile-based process for creating innovative requirements to build better solutions. It works closely with SCRUM and Extreme Programming for managing and implementing those requirements.
+            Design-driven development uses design as part of a process to learn and better define requirements in order to build better, more informed technology solutions. It can also be looked at as a process whereby design and user experience drives the development of a product or software application.</p>
+    </div>
+
+    <button class="accordion">Domain-driven design</button>
+    <div class="panel">
+       <p>DDD is a software design approach focusing on modelling software to match a domain according to input from that domain’s experts. 
+        In terms of object-oriented programming it means that the structure and language of software code (class names, class methods, class variables) should match the business domain. For example, if a software processes loan applications, it might have classes like LoanApplication and Customer, and methods such as AcceptOffer and Withdraw.</p>
+    </div>
+
+    <button class="accordion">Secure by design</button>
+    <div class="panel">
+        <p>Secure by design, in software engineering, means that software products and capabilities have been designed to be foundationally secure.
+            Alternate security strategies, tactics and patterns are considered at the beginning of a software design, and the best are selected and enforced by the architecture, and they are used as guiding principles for developers. It is also encouraged to use strategic design patterns that have beneficial effects on security, even though those design patterns were not originally devised with security in mind.</p>
+
+    </div>
+
+    <button class="accordion">Test-driven development</button>
+    <div class="panel">
+        <p>TDD is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software decelopment by repeatedly testing the software against all test cases. This is as opposed to software being developed first and test cases created later. 
+            Programmers also apply the concept to improving and debugging legacy code developed with older techniques.</p>
+    </div>
+
+    <button class="accordion">Acceptance test-driven development</button>
+    <div class="panel">
+        <p>ATDD is a development methedology based on communication between the business customers, the  developers, and the testers. ATDD encompasses many of the same practices as specification by example(SBE), behavior-driven development(BDD), example-driven development(EDD), and support-driven development also called story test-driven development(SDD). All these processes aid developers and testers in understaning the customer’s needs prior to implementation and allow customers to be able to converse in their own domain language.
+            ATDD is closely related to test-driven development(TDD). It differs by the emphasis on developer-tester-business customer collaboration. ATDD encompasses acceptance testing, but highlights writing acceptance test before developers begin coding.</p>
+    </div>
+
+    <button class="accordion">Continuous test-driven development</button>
+    <div class="panel">
+        <p>CTDD is a software development practice that extends test-driven development(TDD) by means of automatic test execution in the background, sometimes called continuous testing.</p>
+    </div>
+
+    <button class="accordion">Specification by example</button>
+    <div class="panel">
+        <p>SBE is a collaborative approach to defining requirements and business-oriented functional test for software products based on capturing and illustrating requirements using realistic examples instead of abstract statements. It is applied in the context of agile software development methods, particular behavior-driven development. This approach is particularly successful for managing requirements and functional tests on large-scale projects of significant domain and organisational complexity. 
+            Specification by example is also known as example-driven development, executable requirements, acceptance test-driven development(ATDD), Agile Acceptance Testing, Test-Driven Requirements(TDR).</p>
+    </div>
+
+    <button class="accordion">Data-driven development</button>
+    <div class="panel">
+        <p>Data-driven software development is based on solid metrics like Key Performance Indicators(KPIs) or Objectives And Key Results(OKRs). Clear, objective, and unambiguous, these metrics encourage dev teams to think about the long-term strategic objectives of their day-to-day work and the business value of each project. The data allows these teams and individuals to visualize how their work contributes to business success, and how they can support the organization in meeting its vital goals.</p>
+    </div>
+
+    <button class="accordion">Data-oriented design</button>
+    <div class="panel">In computing, data-oriented design is a program optimization approach motivated by efficient usage of the CPU cache, used in video game development. The approach is to focus on the data layout, separating and sorting fields according to when they are needed, and to think about transformations of data. 
+        The parallel array(or structure of arrays) is the main example of data-oriented desing. It is contrasted with the array of structures typical of object-oriented designs.</div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+        </script>
+</body>
+</html>
