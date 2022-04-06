@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>GIT</title>
+</head>
+<body>
+    <h2>Github for beginners</h2>
+
+    <button class="accordion">Notes</button>
+    <div class="panel">
+        <li>git remote add origin (URL from github)</li>
+        <li>git remote - you can see what you have added and what you already had before</li>
+        <li>git remote -v</li>
+        <li>git push -u origin master</li>
+        <li>git branch -r - "origin/master", means that you have a connection between your local master branch and the master branch in your remote repository </li>
+        <li>git clone (URL from github) - clones the entire repository (for somebody else to use for an example)</li>
+        <li>git fetch</li>
+        <li>git pull
+
+        </li>
+        <p>DELETING REPOSITORY IN GITHUB:</p>
+        <p>repos -> settings -> danger zone -> delete
+
+        </p>
+        <p>THEN DELETING IT FROM GIT:</p>
+        <li>git remote</li>
+        <p>-repository name appears-</p>
+        <li>git remote rm "repos name"</li>
+    </div>  
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+        }
+        </script>
+</body>
+</html>   
